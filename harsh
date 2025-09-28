@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harsh Singh — Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin:0; padding:0; }
+body { font-family:'Inter',sans-serif; background:#0a0f1f; color:#e0e6f0; overflow-x:hidden; line-height:1.6; }
+
+header { text-align:center; padding:100px 20px 60px; background:linear-gradient(135deg,#0a0f1f,#111d3a);}
+header h1 { font-size:3rem; font-weight:700; margin-bottom:15px;}
+header .roles span { display:inline-block; font-size:1.4rem; color:#7cdaff; height:30px; transition: all 0.3s ease;}
+
+section { padding:60px 20px; max-width:1000px; margin:auto; opacity:0; transform:translateY(40px); transition:all 0.8s ease;}
+section.show { opacity:1; transform:translateY(0); }
+
+.section-title { font-size:2rem; font-weight:600; margin-bottom:30px; border-left:4px solid #7cdaff; padding-left:10px; }
+
+.card { background:#10182f; border-radius:12px; padding:25px; margin-bottom:25px; box-shadow:0 6px 20px rgba(0,0,0,0.4); opacity:0; transform:translateY(30px); transition:all 0.6s ease;}
+.card.show { opacity:1; transform:translateY(0); }
+.card h3 { margin-bottom:10px; color:#7cdaff; }
+.card p { margin-bottom:10px; color:#b0b9c4; }
+ul { padding-left:20px; margin-top:10px; color:#b0b9c4; }
+li { margin-bottom:8px; }
+a { color:#7cdaff; text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+.skills { display:flex; flex-wrap:wrap; gap:10px; margin-top:12px; }
+.skill { background:#1b274b; padding:6px 14px; border-radius:8px; font-size:0.9rem; }
+
+footer { text-align:center; padding:40px 20px; color:#888; border-top:1px solid #1b274b; }
+
+.project-thumb { width:100%; border-radius:8px; margin-bottom:12px; }
+
+@media(max-width:768px){
+  header h1 { font-size:2.5rem; }
+  header .roles span { font-size:1.2rem; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Harsh Singh</h1>
+  <div class="roles">
+    Open to work as <span id="role-text"></span>
+  </div>
+</header>
+
+<!-- About -->
+<section id="about">
+  <div class="section-title">About Me</div>
+  <div class="card">
+    <p>I’m Harsh Singh, a Data Analyst with 1+ years of experience in SQL development, BI reporting, and automation. Skilled in PostgreSQL, Oracle SQL, MySQL, Python, Power BI, and Excel. I build queries, dashboards, and automated workflows to transform data into business insights.</p>
+    <div class="skills">
+      <div class="skill">PostgreSQL</div>
+      <div class="skill">Oracle SQL</div>
+      <div class="skill">MySQL</div>
+      <div class="skill">Python</div>
+      <div class="skill">Power BI</div>
+      <div class="skill">Excel</div>
+      <div class="skill">Shell Scripting</div>
+      <div class="skill">Data Analysis</div>
+      <div class="skill">Data Migration</div>
+      <div class="skill">Reporting</div>
+    </div>
+  </div>
+</section>
+
+<!-- Experience -->
+<section id="experience">
+  <div class="section-title">Experience</div>
+  <div class="card">
+    <h3>C-Edge Technologies Limited</h3>
+    <p><em>SQL Developer / Data Analyst — Sep 2024 – Present</em></p>
+    <ul>
+      <li>Executed end-to-end data migration for 3 banks, ensuring quality, integrity, and compliance.</li>
+      <li>Developed complex SQL queries, stored procedures, and reporting scripts for large datasets.</li>
+      <li>Applied advanced data cleaning, transformation, and error rectification techniques.</li>
+      <li>Used Excel (pivot tables, macros) and Power BI for dashboards and trend analysis.</li>
+      <li>Collaborated with teams for requirements gathering, data mapping, and process improvements.</li>
+      <li>Managed post-migration updates and ensured data integrity with SQL scripts.</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>Top RPO</h3>
+    <p><em>Data Operations Associate — Jun 2023 – Sep 2024</em></p>
+    <ul>
+      <li>Led recruitment data operations and placed 15+ candidates using advanced Excel and ATS.</li>
+      <li>Designed and maintained dashboards and automated reports for recruitment metrics.</li>
+      <li>Optimized candidate pipeline processes and ensured ATS data integrity.</li>
+      <li>Coordinated interview scheduling and applied structured data workflows.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+  <div class="section-title">Projects</div>
+
+  <div class="card project-card">
+    <h3>Wholesale Sales Analysis</h3>
+    <p>Analyzed wholesale and retail sales using Power BI, identifying top products, suppliers, and monthly sales trends.<br>
+    <a href="https://github.com/Harsh07-bit/Wholesale-sales-analysis" target="_blank">View Project →</a></p>
+  </div>
+
+  <div class="card project-card">
+    <h3>The Pizza Company Sales Analysis</h3>
+    <p>Examined pizza sales to identify customer preferences, trends, and performance patterns.<br>
+    <a href="https://github.com/Harsh07-bit/the-pizza-company-sales-analysis" target="_blank">View Project →</a></p>
+  </div>
+
+  <div class="card project-card">
+    <h3>Nestlé Sales Analytics</h3>
+    <p>Analyzed Nestlé sales across states, cities, and products to highlight top-performing areas.<br>
+    <a href="https://github.com/Harsh07-bit/Nestle-Sales-Analytics" target="_blank">View Project →</a></p>
+  </div>
+
+  <div class="card project-card">
+    <h3>HR Analytics Dashboard</h3>
+    <p>Provided insights into employee performance, retention, and HR KPIs.<br>
+    <a href="https://github.com/Harsh07-bit/HR_-Analytics_Dashboard" target="_blank">View Project →</a></p>
+  </div>
+
+  <div class="card project-card">
+    <h3>Compare PDF</h3>
+    <p>Compared two PDF files to identify differences and assist document review.<br>
+    <a href="https://github.com/Harsh07-bit/Compare-PDF" target="_blank">View Project →</a></p>
+  </div>
+
+  <div class="card project-card">
+    <h3>Pizza Sales Analysis (SQL)</h3>
+    <p>Analyzed pizza order data: top products, demand trends, and customer behavior.<br>
+    <a href="https://github.com/Harsh07-bit/Pizza_Sales_Analysis_with_SQL" target="_blank">View Project →</a></p>
+  </div>
+
+  <div class="card project-card">
+    <h3>Sales Forecast & Analytics (Power BI)</h3>
+    <p>Built forecasting and trend analysis dashboards with Power BI.<br>
+    <a href="https://github.com/Harsh07-bit/Sales-Forecast-and-Analytics" target="_blank">View Project →</a></p>
+  </div>
+
+  <div class="card">
+    <h3>More on GitHub</h3>
+    <p><a href="https://github.com/Harsh07-bit?tab=repositories" target="_blank">Explore all repositories →</a></p>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <div class="section-title">Contact</div>
+  <div class="card">
+    <p><strong>Email:</strong> harshs2403@gmail.com</p>
+    <p><strong>Phone:</strong> +91 84528 11978</p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/harsh-singh24/" target="_blank">linkedin.com/in/harsh-singh24</a></p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/Harsh07-bit" target="_blank">github.com/Harsh07-bit</a></p>
+    <p><strong>Location:</strong> Mumbai, India</p>
+  </div>
+</section>
+
+<footer>
+  © <span id="year"></span> Harsh Singh — Portfolio
+</footer>
+
+<script>
+// Typing animation for roles
+const roleList = ["Data Analyst","Business Analyst","PL/SQL Developer"];
+let roleIndex = 0;
+let charIndex = 0;
+const roleText = document.getElementById("role-text");
+const typingSpeed = 100;
+const erasingSpeed = 50;
+const delayBetweenRoles = 2000;
+
+function typeRole(){
+  if(charIndex < roleList[roleIndex].length){
+    roleText.textContent += roleList[roleIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(typeRole, typingSpeed);
+  } else {
+    setTimeout(eraseRole, delayBetweenRoles);
+  }
+}
+
+function eraseRole(){
+  if(charIndex > 0){
+    roleText.textContent = roleList[roleIndex].substring(0, charIndex - 1);
+    charIndex--;
+    setTimeout(eraseRole, erasingSpeed);
+  } else {
+    roleIndex = (roleIndex + 1) % roleList.length;
+    setTimeout(typeRole, typingSpeed);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(typeRole, 500);
+
+  // Scroll reveal for sections and cards
+  const elements = document.querySelectorAll("section, .card");
+  window.addEventListener("scroll", () => {
+    elements.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if(rect.top < window.innerHeight - 50){
+        el.classList.add("show");
+      }
+    });
+  });
+
+  // Footer year
+  document.getElementById("year").textContent = new Date().getFullYear();
+});
+</script>
+
+</body>
+</html>
